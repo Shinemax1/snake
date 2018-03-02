@@ -154,10 +154,11 @@ function init() {
     }
 
     function onClose() {
+        var that = this;
         close.onclick = function () {
             var snakeB = document.getElementsByClassName('snake');
             alert.style.display = 'none';
-            window.snakeBody = [
+            that.snakeBody = [
                 [3, 2, 'head'],
                 [2, 2, 'body'],
                 [1, 2, 'body']
